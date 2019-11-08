@@ -1,4 +1,4 @@
-  let foods = {
+let foods = {
     apples: 25,
     oranges: 32,
     plums: 28,
@@ -6,13 +6,10 @@
     grapes: 35,
     strawberries: 27
   };
-  // do not change code above this line
   
-  function checkInventory(scannedItem) {
-    // change code below this line
-    return foods[scannedItem];
-  }
+  delete foods.oranges;
+  delete foods.plums;
+  delete foods.strawberries;
+ 
   
-  // change code below this line to test different cases:
-  console.log(checkInventory("apples"));
-  
+  console.log(foods);
